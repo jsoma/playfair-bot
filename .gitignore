@@ -3,3 +3,4 @@ config.yml
 /.bundle/
 config/*
 Capfile
+/log/
