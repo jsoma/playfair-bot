@@ -6,7 +6,6 @@ options = YAML.load_file("config.yml")
 
 Slack.configure do |config|
   config.token = options['slack_token']
-
 end
 
 module PlayfairBot

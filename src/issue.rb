@@ -343,7 +343,7 @@ module PlayfairBot
         run_check(:checklist)
         run_check(:story_link)
       elsif meta?
-         puts "#### It's meta"
+        # Nothing
       end
 
       close_linked_issues_if_needed!

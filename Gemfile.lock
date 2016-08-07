@@ -8,6 +8,15 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.4.0)
+    airbrussh (1.1.0)
+      sshkit (>= 1.6.1, != 1.7.0)
+    capistrano (3.6.0)
+      airbrussh (>= 1.0.0)
+      capistrano-harrow
+      i18n
+      rake (>= 10.0.0)
+      sshkit (>= 1.9.0)
+    capistrano-harrow (0.5.3)
     coderay (1.1.1)
     concurrent-ruby (1.0.2)
     faraday (0.9.2)
@@ -26,12 +35,16 @@ GEM
     minitest (5.9.0)
     multi_json (1.12.1)
     multipart-post (2.0.0)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (3.2.0)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    rake (11.2.2)
     sawyer (0.7.0)
       addressable (>= 2.3.5, < 2.5)
       faraday (~> 0.8, < 0.10)
@@ -44,6 +57,9 @@ GEM
       json
       websocket-driver
     slop (3.6.0)
+    sshkit (1.11.2)
+      net-scp (>= 1.1.2)
+      net-ssh (>= 2.8.0)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
@@ -56,10 +72,14 @@ PLATFORMS
 
 DEPENDENCIES
   aasm
+  capistrano
   logging
   octokit
   pry
   slack-ruby-client
+
+RUBY VERSION
+   ruby 2.3.0p0
 
 BUNDLED WITH
    1.12.5

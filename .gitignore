@@ -1,3 +1,5 @@
 config.yml
 .DS_Store
 /.bundle/
+config/*
+Capfile
