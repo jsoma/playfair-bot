@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+gem 'logging'
+gem 'octokit'
+gem 'aasm'
+gem 'pry'
+gem 'slack-ruby-client'
