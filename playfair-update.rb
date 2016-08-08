@@ -18,7 +18,7 @@ end.parse!
 
 bot = PlayfairBot::Bot.new()
 
-bot.process_issues if options[:github]
+bot.process_all_issues if options[:github]
 bot.notify_slack if options[:slack]
 
 # binding.pry
